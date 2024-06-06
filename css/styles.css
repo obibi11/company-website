@@ -1,0 +1,232 @@
+/* Загальні стилі */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, section, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+header h1, section h2, footer p {
+    text-align: center;
+}
+
+/* Головний екран */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+/* Про компанію */
+.about {
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.about-section img {
+    width: 45%;
+    max-width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    height: auto;
+}
+
+.about-content {
+    width: 50%;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: right;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.about-content button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.about-content button:hover {
+    background-color: #e67e22;
+}
+
+/* Портфоліо */
+.portfolio {
+    text-align: center;
+    padding: 40px;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для карток портфоліо */
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px; /* Встановлюємо однакову висоту для всіх зображень */
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #e67e22;
+}
+
+/* Контакти */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact h2 {
+    font-size: 1.5em; /* Зменшення розміру шрифту */
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact .form-group {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: vertical; /* Дозволяє змінювати розмір textarea тільки вертикально */
+}
+
+.contact button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #e67e22;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
